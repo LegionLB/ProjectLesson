@@ -76,7 +76,7 @@
                 <version>2.11.2</version>
                 <configuration>
                     <allureDownloadUrl>
-                        https://github.com/allure-framework/allure2/releases/download/2.17.2/allure-2.17.2.zip
+                        https://github.com/allure-framework/allure2/releases/download/2.13.9/allure-2.13.9.zip
                     </allureDownloadUrl>
                     <resultsDirectory>allure-results</resultsDirectory>
                 </configuration>

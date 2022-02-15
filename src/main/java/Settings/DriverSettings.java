@@ -1,5 +1,6 @@
 package Settings;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
 import Settings.Config;
@@ -12,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static Constants.Constant.Timeouts.IMPLICIT_WAIT;
 
 public class DriverSettings {
+
 
     public static WebDriver createDriver(){
 

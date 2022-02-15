@@ -33,7 +33,7 @@ public class BaseTest {
         }
     }
 
-    @AfterMethod
+    @AfterClass
     public void closeBrowser(){
         driver.quit();
     }
