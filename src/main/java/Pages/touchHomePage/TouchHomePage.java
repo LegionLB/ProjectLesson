@@ -1,6 +1,7 @@
 package Pages.touchHomePage;
 
 import Pages.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,7 @@ public class TouchHomePage extends BasePage {
     private final By categoryAppleButton = By.xpath("//li[@class='eChild'][1]");
     private final By categoryXiaomiButton = By.xpath("(//li[@class='eChild'])[2]");
 
+    @Step("Click on the 'Техника Apple' button")
     public TouchHomePage goToApplePage(){
 
         WebElement appleButton = driver.findElement(categoryAppleButton);
@@ -26,6 +28,7 @@ public class TouchHomePage extends BasePage {
         return this;
     }
 
+    @Step("Click on the 'Техника Xiaomi' button")
     public TouchHomePage goToXiaomiPage(){
 
         WebElement xiaomiButton = driver.findElement(categoryXiaomiButton);

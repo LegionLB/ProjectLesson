@@ -3,11 +3,11 @@ package tests.base;
 import Pages.base.BasePage;
 import Pages.touchHomePage.TouchHomePage;
 import Settings.DriverSettings;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import static Constants.Constant.Urls.TOUCH_HOME_PAGE;
 import static Settings.Config.CLEAR_COOKIES_AND_LOCAL_STORAGE;
@@ -18,7 +18,8 @@ public class BaseTest {
     protected BasePage basePage = new BasePage(driver);
     protected TouchHomePage touchHomePage = new TouchHomePage(driver);
 
-    @BeforeTest
+    @BeforeMethod
+    @Step("Opening Touch Home Page")
     public void openTouchHomePage(){
         basePage.open(TOUCH_HOME_PAGE);
     }
@@ -38,4 +39,7 @@ public class BaseTest {
         driver.quit();
     }
 
+    public WebDriver getDriver() { WebDriver webDriver = driver;
+        return webDriver;
+    }
 }

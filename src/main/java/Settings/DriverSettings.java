@@ -14,10 +14,11 @@ import static Constants.Constant.Timeouts.IMPLICIT_WAIT;
 
 public class DriverSettings {
 
+    static WebDriver driver;
 
     public static WebDriver createDriver(){
 
-        WebDriver driver = null;
+        //WebDriver driver = null;
 
         // change Config.XXX to choose a system and browser(Check Config file)
         switch (Config.MAC_CHROME){
@@ -40,6 +41,10 @@ public class DriverSettings {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+        return driver;
+    }
+
+    public static WebDriver getDriver(){
         return driver;
     }
 

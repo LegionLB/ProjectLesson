@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Master Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
     <suite-files>
         <suite-file path="categorySuite.xml"/>
     </suite-files>

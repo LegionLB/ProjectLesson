@@ -1,4 +1,14 @@
 .side-nav__brand {
-  background: url('custom-logo.svg') no-repeat left center !important;
+  background: url('Logo-from-web.png') no-repeat left center !important;
   margin-left: 10px;
+}
+
+.side-nav__brand-text{
+    visibility: hidden;
+}
+
+.side-nav__brand-text:before{
+    content: 'SoftCust';
+    visibility : visible;
+    font-size: large;
 }

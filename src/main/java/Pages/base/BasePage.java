@@ -1,5 +1,6 @@
 package Pages.base;
 
+import io.qameta.allure.Step;
 import net.bytebuddy.implementation.bytecode.ShiftRight;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -34,6 +35,7 @@ public class BasePage {
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
+    @Step("Check current URL With Expected URL - {0}")
     public void checkCurrentUrl(String expectedUrl){
 
 
@@ -49,6 +51,21 @@ public class BasePage {
 
     public void closePage(){
         driver.close();
+    }
+
+    //Browser button
+    public void goBack(){
+        driver.navigate().back();
+    }
+
+    //Browser button
+    public void goForward(){
+        driver.navigate().forward();
+    }
+
+    //Browser button
+    public void refreshPage(){
+        driver.navigate().refresh();
     }
 
 }
