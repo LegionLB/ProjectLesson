@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Search]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Search items by using search field(failed)" verbose="0">
+    <classes>
+      <class name="tests.search.positive.SearchPositiveTest">
+        <methods>
+          <include name="openTouchHomePage"/>
+          <include name="clearCookiesAndLocalStorage"/>
+          <include name="searchItem"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.search.positive.SearchPositiveTest -->
+    </classes>
+  </test> <!-- Search items by using search field(failed) -->
+</suite> <!-- Failed suite [Search] -->

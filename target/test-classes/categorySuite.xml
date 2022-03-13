@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Category">
+    <test name="Go to apple home page">
+        <classes>
+            <class name="tests.categoryList.positive.CategoryListTest"/>
+        </classes>
+    </test>
+</suite>
